@@ -1,0 +1,4 @@
+FROM java:8
+EXPOSE 8400
+ADD /target/finance-tracking-service-1.0-SNAPSHOT.jar finance-tracking-service-1.0-SNAPSHOT.jar
+ENTRYPOINT ["java","-jar", "finance-tracking-service-1.0-SNAPSHOT.jar"]

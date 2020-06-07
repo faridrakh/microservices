@@ -1,0 +1,4 @@
+FROM java:8
+EXPOSE 8300
+ADD /target/pass-manager-service-1.0-SNAPSHOT.jar pass-manager-service-1.0-SNAPSHOT.jar
+ENTRYPOINT ["java","-jar", "pass-manager-service-1.0-SNAPSHOT.jar"]

@@ -1,0 +1,4 @@
+FROM java:8
+EXPOSE 8050
+ADD /target/eureka-server-1.0.jar eureka-server-1.0.jar
+ENTRYPOINT ["java","-jar", "eureka-server-1.0.jar"]
